@@ -22,7 +22,7 @@ Ik had al direct veel ideeën voor interacties en beweging in het ontwerp. Omdat
 
 Ik ben begonnen met het maken van het kunstwerk in Illustrator. Hier heb ik de verschillende letters in verschillende lagen geplaatst. Op deze manier zijn deze later makkelijk te animeren door middel van code. Ik heb de lagen vanuit Illustrator geëxporteerd als SVG en de code hiervan in de HTML geplakt.
 
-<img src="illustrator.png" width="100%" height="auto">
+<img src="illustrator.jpg" width="100%" height="auto">
 
 Om het kunstwerk precies na te maken heb ik op de letters in de CSS een ``mix-blend-mode:multiply`` geplaatst waardoor de letters dezelfde kleurcombinaties kregen. Ik heb de letters in het midden van het scherm geplaatst omdat deze centraal zijn voor de website. Ik heb door gebruik te maken van Keyframes de letters een zweef effect gegeven om zo aan de gebruiker mee te geven dat de website actief is, daarnaast ziet het er aantrekkelijk en speels uit. Dit is weer terug te koppelen naar het speelse van het lettertype.
 
