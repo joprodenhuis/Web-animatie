@@ -14,10 +14,7 @@ Het kunstwerk dat ik heb uitgekozen voor de opdracht is afkomstig uit de Online 
 >Found on:
 [Online Archive](http://oa.letterformarchive.org/item?workID=lfa_pintori_0041&LFAPics=Yes)
 
-# Workflow
-
-
-## Concept
+# Concept
 Ik had al direct veel ideeën voor interacties en beweging in het ontwerp. Omdat het lettertype is ontworpen om in te spelen op speelse lettertypes vond ik het een mooie uitdaging om een speels ontwerp te maken. Hierbij wou ik de gebruiker een rol geven van oneindige creativiteit die los te laten is op verschillende manieren op het digitale kunstwerk.
 
 Ik ben begonnen met het maken van het kunstwerk in Illustrator. Hier heb ik de verschillende letters in verschillende lagen geplaatst. Op deze manier zijn deze later makkelijk te animeren door middel van code. Ik heb de lagen vanuit Illustrator geëxporteerd als SVG en de code hiervan in de HTML geplakt.
@@ -26,11 +23,23 @@ Ik ben begonnen met het maken van het kunstwerk in Illustrator. Hier heb ik de v
 
 Om het kunstwerk precies na te maken heb ik op de letters in de CSS een ``mix-blend-mode:multiply`` geplaatst waardoor de letters dezelfde kleurcombinaties kregen. Ik heb de letters in het midden van het scherm geplaatst omdat deze centraal zijn voor de website. Ik heb door gebruik te maken van Keyframes de letters een zweef effect gegeven om zo aan de gebruiker mee te geven dat de website actief is, daarnaast ziet het er aantrekkelijk en speels uit. Dit is weer terug te koppelen naar het speelse van het lettertype.
 
-## Interactie
+```
+#S {
+	animation: floatingS 4s infinite ease-in-out;
+}
+
+@keyframes floatingS {
+    from { transform: translate(0,  0); }
+    65%  { transform: translate(40px, 0); }
+    to   { transform: translate(-0px, -0); }    
+}
+```
+
+# Interactie
 Om de gebruiker interactie te laten maken met het kunstwerk heb ik verschillende functies toegevoegd. De functies zijn uiteenlopend met betrekking tot interactie, dit heb ik gedaan om zelf te experimenteren met CSS animaties en om de gebruiker een speelse ervaring te geven. 
 * Hover effect
 * Letter kleur veranderen
-* Letter verdeling
+* Letter volgorde
 * Kleuren omkeren
 
 ### Hover effect
@@ -53,3 +62,75 @@ h2 span:hover {
   transition: .3s ease;
 }
 ```
+### Letter kleur veranderen
+
+Het meest interessante aan het door mij gekozen kunstwerk vond ik de nieuwe kleuren die onstaan door de ``mix-blend-mode``. Dit inspireerde mij om de gebruiker de mogelijkheid te geven om de kleuren van de letters aan te laten passen zodat er nieuwe kleuren mengsels zouden ontstaan. In eerste instantie wou ik elke letter een RGB-slider geven zodat de gebruiker zelf de kleur kon bepalen. Echter kostte dit teveel JavaScript ervaring waardoor ik de keuze heb gemaakt om elke letter een button te geven waarmee de kleur kan worden aangepast. Wanneer er op de button wordt geklikt zal de kleur van de desbetreffende letter in een willekeurige kleur veranderen. 
+
+Dit effect heb ik gemaakt door een aantal onclick funties op de buttons te zetten waarmee de functie ``randomColors()`` wordt uitgevoerd op de ``style.fill`` van de letters.
+
+```
+<button id="genNewS" onclick="randomizeS()">Change <span>S</span> color</button>
+<button id="genNewT" onclick="randomizeT()">Change <span>T</span> color</button>
+<button id="genNewO" onclick="randomizeO()">Change <span>O</span> color</button>
+```
+
+```
+function randomizeS() {
+  	document.getElementById('S-2').style.fill = randomColors();
+}
+
+function randomizeT() {
+  	document.getElementById('T-2').style.fill = randomColors();
+}
+
+function randomizeO() {
+  	document.getElementById('O-2').style.stroke = randomColors();
+}
+			
+function randomColors() {
+  	return '#' + Math.floor(Math.random() * 16777215).toString(16);
+}
+```
+
+### Letter volgorde
+
+Om een grotere diversiteit in kleuren mengsels te bereiken wou ik de gebruiker de optie geven om de volgorde van de letters aan te passen. Hierdoor zou er worden ingespeeld op de ``mix-blend-mode`` en zouden er nieuwe blends ontstaan. Eerst heb ik geprobeerd om de Z-index van de letters met een onclick aan te passen, dit was echter zonder succes. Uiteindelijk heb ik een methode gevonden waarbij er door middel van JavaScript een bepaald laag van de SVG in focus wordt gebracht. Hierdoor komt deze boven de andere lagen van de svg te staan. Het nadeel hiervan waar ik nog geen oplossing voor heb kunnen vinden is dat hierdoor het zwevende effect evenals de ``mix-blend-mode`` overschreden worden waardoor er geen nieuwe blends ontstaan. 
+
+```
+var svg = document.querySelector("svg");
+var letters = document.querySelectorAll("path, circle");
+
+var i = letters.length;
+while(i--) {
+  	letters[i].addEventListener("click", function(e) {
+   		svg.appendChild(e.target);
+  	});
+}
+```
+
+### Kleuren omkeren
+
+Tot slot heb ik een interactie toegevoegd die gebruik maakt van het toetsenbord. Ik heb deze interactie toegevoegd omdat ik hier mee wou experimenteren en omdat dit een extra speels element is voor de gebruiker. Wanneer de gebruiker de spatiebalk indrukt zullen alle kleuren op de website omkeren. De kleuren worden weer terug omgekeerd wanneer de spatiebalk opnieuw wordt ingedrukt.
+
+```
+.click {
+  background:linear-gradient(#EA5135 0%, black 90%);
+  background-size: 100% 15000%;
+  -webkit-filter: invert(1);
+  filter: invert(1);
+  height: 10px;
+}
+```
+
+```
+var invert = document.querySelector('body');
+
+window.addEventListener("keydown", toggle);
+
+function toggle(event) {
+    if(event.keyCode === 32) {
+        invert.classList.toggle('click');
+    }
+ }
+ ```
+
