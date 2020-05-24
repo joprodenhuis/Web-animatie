@@ -133,4 +133,45 @@ function toggle(event) {
     }
  }
  ```
+# Responsive design
+
+Om de website op elk schermformaat gebruiksvriendelijk te houden heb ik gebruik gemaakt van een responsive design. Ik heb meerdere media queries gebruikt om breakpoints toe te voegen voor verschillende schermgroottes. Bij de media queries worden onder andere de grootte van de titels, de grootte van de letters en de margin's/padding's aangepast. Daarnaast heb ik op verschillende elementen flexbox toegepast waardoor er automatisch een responsive design ontstaat. Bijvoorbeeld de tekst en de buttons worden onder elkaar geplaatst wanneer er te weinig ruimte in de breedte is voor de elementen. 
+```
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.color-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+```
+
+```
+@media only screen and (max-width: 820px) {
+  h1 {
+    font-size: 26pt;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  h2 {
+    font-size: 14pt;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .letters {
+    left: 26%;
+  }
+}
+```
+
+Ik heb geprobeerd om zoveel mogelijk interacties te gebruiken die door middel van onclick geactiveerd worden zodat deze ook op de telefoon bruikbaar zijn. De hover over de woorden in de titel is op de telefoon mogelijk door op de woorden te klikken. De letter kleuren en volgorde blijven onveranderd, alleen het omkeren van de kleuren vervalt op het mobiele ontwerp. 
+
 
