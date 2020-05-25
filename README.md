@@ -12,7 +12,7 @@ Het kunstwerk dat ik heb uitgekozen voor de opdracht is afkomstig uit de Online 
 >Decade: 1971
 
 >Found on:
-[Online Archive](http://oa.letterformarchive.org/item?workID=lfa_pintori_0041&LFAPics=Yes)
+[Online Archive](http://oa.letterformarchive.org/item?workID=lfa_type_0049&LFAPics=Yes)
 
 # Concept
 Ik had al direct veel ideeën voor interacties en beweging in het ontwerp. Omdat het lettertype is ontworpen om in te spelen op speelse lettertypes vond ik het een mooie uitdaging om een speels ontwerp te maken. Hierbij wou ik de gebruiker een rol geven van oneindige creativiteit die los te laten is op verschillende manieren op het digitale kunstwerk.
@@ -174,4 +174,21 @@ h1 {
 
 Ik heb geprobeerd om zoveel mogelijk interacties te gebruiken die door middel van onclick geactiveerd worden zodat deze ook op de telefoon bruikbaar zijn. De hover over de woorden in de titel is op de telefoon mogelijk door op de woorden te klikken. De letter kleuren en volgorde blijven onveranderd, alleen het omkeren van de kleuren vervalt op het mobiele ontwerp. 
 
+# Experimenten
+* CSS hovers
+* CSS keyframes
+* CSS filters
+* CSS blend mode
+* Flexbox
+* Media Queries
+* Transitions
+* JavaScript interactie
+
+# Bronnen
+* [Kunstwerk] (http://oa.letterformarchive.org/item?workID=lfa_type_0049&LFAPics=Yes)
+* [Flexbox] (https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+* [Random color] (https://www.paulirish.com/2009/random-hex-color-code-snippets/)
+* [Keydown] (https://api.jquery.com/keydown/)
+* [SVG Z-index] (https://codepen.io/osublake/pen/YXoEQe?__cf_chl_jschl_tk__=d085a766bc8c14c2f5702214b9129b6cfcec9aaf-1590366252-0-AVIMk5_lODLNhIwHMA51tZDTA0lvpngfx2qNEUbg0L_i28tuaPjC1mxyzsMQha1NmUJbspSfJTagi9DqJn-qM2d0u1wU4Ga6riU9dqRAQH32Jp67KTVfCaVhRbuWqBzS4F66Lp-h5f8LVfqXu871NSKloM5YBleUFGVy80CkoE0opkRo5m-FCVTvJkduzC2r1ArvWQzHqv5EwEZ1HBdJ6KZqC8Iht-Vf426oQfpb7YH6ErcuWZ-ihyEgG0P0LxCIBry2Tlg0ZeMnhvU-mxuTMa7HjrLdjBSpsYEOCYxpKx9nN7fZRLEu3wQzzuh2woa2v3EQweXI2hFQqONLEbqAOfxGvSZ0HUcDOu6RyKYQiDhm)
+* [Text gradient] (https://w3bits.com/rainbow-text/)
 
