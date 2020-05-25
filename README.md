@@ -185,10 +185,10 @@ Ik heb geprobeerd om zoveel mogelijk interacties te gebruiken die door middel va
 * JavaScript interactie
 
 # Bronnen
-* [Kunstwerk] (http://oa.letterformarchive.org/item?workID=lfa_type_0049&LFAPics=Yes)
-* [Flexbox] (https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-* [Random color] (https://www.paulirish.com/2009/random-hex-color-code-snippets/)
-* [Keydown] (https://api.jquery.com/keydown/)
-* [SVG Z-index] (https://codepen.io/osublake/pen/YXoEQe?__cf_chl_jschl_tk__=d085a766bc8c14c2f5702214b9129b6cfcec9aaf-1590366252-0-AVIMk5_lODLNhIwHMA51tZDTA0lvpngfx2qNEUbg0L_i28tuaPjC1mxyzsMQha1NmUJbspSfJTagi9DqJn-qM2d0u1wU4Ga6riU9dqRAQH32Jp67KTVfCaVhRbuWqBzS4F66Lp-h5f8LVfqXu871NSKloM5YBleUFGVy80CkoE0opkRo5m-FCVTvJkduzC2r1ArvWQzHqv5EwEZ1HBdJ6KZqC8Iht-Vf426oQfpb7YH6ErcuWZ-ihyEgG0P0LxCIBry2Tlg0ZeMnhvU-mxuTMa7HjrLdjBSpsYEOCYxpKx9nN7fZRLEu3wQzzuh2woa2v3EQweXI2hFQqONLEbqAOfxGvSZ0HUcDOu6RyKYQiDhm)
-* [Text gradient] (https://w3bits.com/rainbow-text/)
+* [Kunstwerk](http://oa.letterformarchive.org/item?workID=lfa_type_0049&LFAPics=Yes)
+* [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+* [Random color](https://www.paulirish.com/2009/random-hex-color-code-snippets/)
+* [Keydown](https://api.jquery.com/keydown/)
+* [SVG Z-index](https://codepen.io/osublake/pen/YXoEQe?__cf_chl_jschl_tk__=d085a766bc8c14c2f5702214b9129b6cfcec9aaf-1590366252-0-AVIMk5_lODLNhIwHMA51tZDTA0lvpngfx2qNEUbg0L_i28tuaPjC1mxyzsMQha1NmUJbspSfJTagi9DqJn-qM2d0u1wU4Ga6riU9dqRAQH32Jp67KTVfCaVhRbuWqBzS4F66Lp-h5f8LVfqXu871NSKloM5YBleUFGVy80CkoE0opkRo5m-FCVTvJkduzC2r1ArvWQzHqv5EwEZ1HBdJ6KZqC8Iht-Vf426oQfpb7YH6ErcuWZ-ihyEgG0P0LxCIBry2Tlg0ZeMnhvU-mxuTMa7HjrLdjBSpsYEOCYxpKx9nN7fZRLEu3wQzzuh2woa2v3EQweXI2hFQqONLEbqAOfxGvSZ0HUcDOu6RyKYQiDhm)
+* [Text gradient](https://w3bits.com/rainbow-text/)
 
