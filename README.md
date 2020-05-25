@@ -43,7 +43,7 @@ Om de gebruiker interactie te laten maken met het kunstwerk heb ik verschillende
 * Kleuren omkeren
 
 ### Hover effect
-
+<img src="hover.png" width="100%" height="auto">
 De eerste interactie die ik heb toegevoegd is een hover op de titel en subtitel op de pagina. Deze titels zitten niet op het originele kunstwerk maar heb ik toegevoegd om de gebruiker een korte instructie te geven. Wanneer er over de woorden van de titel wordt bewogen met de muis worden de woorden uitvergroot en zullen ze een kleurmix krijgen bestaande uit de 3 kleuren van het originele kunstwerk. Op de hover animatie zit nog een transition om de overgang iets soepeler te maken. Het kleur geven van de woorden in een gradient van de drie kleuren was nog een beetje tricky maar hier heb ik uiteindelijk met een ``-webkit-background-clip`` een oplossing voor gevonden.
 
 ```
@@ -63,7 +63,7 @@ h2 span:hover {
 }
 ```
 ### Letter kleur veranderen
-
+<img src="color-change.png" width="100%" height="auto">
 Het meest interessante aan het door mij gekozen kunstwerk vond ik de nieuwe kleuren die onstaan door de ``mix-blend-mode``. Dit inspireerde mij om de gebruiker de mogelijkheid te geven om de kleuren van de letters aan te laten passen zodat er nieuwe kleuren mengsels zouden ontstaan. In eerste instantie wou ik elke letter een RGB-slider geven zodat de gebruiker zelf de kleur kon bepalen. Echter kostte dit teveel JavaScript ervaring waardoor ik de keuze heb gemaakt om elke letter een button te geven waarmee de kleur kan worden aangepast. Wanneer er op de button wordt geklikt zal de kleur van de desbetreffende letter in een willekeurige kleur veranderen. 
 
 Dit effect heb ik gemaakt door een aantal onclick funties op de buttons te zetten waarmee de functie ``randomColors()`` wordt uitgevoerd op de ``style.fill`` van de letters.
@@ -93,7 +93,7 @@ function randomColors() {
 ```
 
 ### Letter volgorde
-
+<img src="z-index.png" width="100%" height="auto">
 Om een grotere diversiteit in kleuren mengsels te bereiken wou ik de gebruiker de optie geven om de volgorde van de letters aan te passen. Hierdoor zou er worden ingespeeld op de ``mix-blend-mode`` en zouden er nieuwe blends ontstaan. Eerst heb ik geprobeerd om de Z-index van de letters met een onclick aan te passen, dit was echter zonder succes. Uiteindelijk heb ik een methode gevonden waarbij er door middel van JavaScript een bepaald laag van de SVG in focus wordt gebracht. Hierdoor komt deze boven de andere lagen van de svg te staan. Het nadeel hiervan waar ik nog geen oplossing voor heb kunnen vinden is dat hierdoor het zwevende effect evenals de ``mix-blend-mode`` overschreden worden waardoor er geen nieuwe blends ontstaan. 
 
 ```
@@ -109,7 +109,7 @@ while(i--) {
 ```
 
 ### Kleuren omkeren
-
+<img src="invert.png" width="100%" height="auto">
 Tot slot heb ik een interactie toegevoegd die gebruik maakt van het toetsenbord. Ik heb deze interactie toegevoegd omdat ik hier mee wou experimenteren en omdat dit een extra speels element is voor de gebruiker. Wanneer de gebruiker de spatiebalk indrukt zullen alle kleuren op de website omkeren. De kleuren worden weer terug omgekeerd wanneer de spatiebalk opnieuw wordt ingedrukt.
 
 ```
